@@ -1,0 +1,81 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>PhishNet Settings</title>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery-color.js"></script>
+    <script src="settings.js"></script>
+    <link rel="stylesheet" type="text/css" href="settings.css">
+</head>
+<body>
+    <div id="alert-div">
+        <p id="alertMessage"></p>
+        <button id="alertOption1" class="alertButton"></button>
+        <div id="divider"></div>
+        <button id="alertOption2" class="alertButton"></button>
+        <br />
+    </div>
+    <div id="main">
+        <br />
+        <p id="title">PhishNet Settings</p>
+        <p id="subtitle">Adjust your site lists and additional settings on this page</p>
+
+        <div id="listHolder">
+
+            <div id="whiteList-div" class="list-div">
+                    <select multiple name="year" size="5" id="whiteList-select" class="list-div-select">
+                      
+                    </select>
+            </div>
+            
+
+            <div class="spacer">
+                
+               
+            </div> 
+
+            <div id="blackList-div" class="list-div">
+                <select multiple name="year" size="5" id="blackList-select" class="list-div-select">
+                    
+                </select>
+            </div>
+
+        </div>
+        <div id="optionsHolder">
+            <div id="listOptionsHolder">
+                <div id="vertical-spacer"></div>
+                <div id="whitelistOptions-div" class="listOptions-div">
+                    <input id="whitelist-add" class="addSite-form" type="text" name="whitelist-add" autocomplete="off" placeholder="Enter a site to add to the whitelist here"/>
+                    <br /><br />
+                    <button id="whiteAddButton" class="optionButton whiteButton">Add Site </button>
+                    <div class="divider"></div>
+                    <button id="whiteMoveButton" class="optionButton blackButton">Move to<br />Blacklist</button>
+                    <div class="divider"></div>
+                    <button id="whiteDeleteButton" class="optionButton whiteButton">Delete Site</button>
+                    
+                </div>
+                <div id="blacklistOptions-div" class="listOptions-div">
+                    <input id="blacklist-add" class="addSite-form" type="text" name="blacklist-add" autocomplete="off" placeholder="Enter a site to add to the blacklist here"/>
+                    <br /><br />
+                    <button id="blackAddButton" class="optionButton blackButton">Add Site</button>
+                    <div class="divider"></div>
+                    <button id="blackMoveButton" class="optionButton whiteButton">Move to<br />Whitelist</button>
+                    <div class="divider"></div>
+                    <button id="blackDeleteButton" class="optionButton blackButton">Delete Site</button>
+                    
+                </div>
+            </div>
+            <div id="numberHolder" class="holder">
+                <br />
+                <label id="numberLabel" for="number-box">Number of Community Reports to Block a Site:     </label><!--<br /><br />--->
+                <input type="number" id="number-box" name="number-box" size="4" step="10" value=""  min="0" autocomplete="off" />
+            </div>
+            <div id="contactHolder" class="holder">
+                <br />
+                <p id="contact-par">Contact us at:  support@phishnet.com</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

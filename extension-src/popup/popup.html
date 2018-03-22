@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>PhishNet</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+        }
+
+        #status {
+            white-space: pre;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 400px;
+        }
+    </style>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/jquery-color.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+
+
+    <div id="big-div">
+    <div id="alert-div">
+        <p id="alertMessage"></p>
+        <button id="alertOption1" class="alertButton"></button>     
+        <div id="divider"></div>
+        <button id="alertOption2" class="alertButton"></button>
+        <br />
+    </div>
+    <div id="container">
+
+        <br />
+        <div id="head-div" style="background: white"> 
+            <h1 class ="centered" id="head">PhishNet
+            <button id="settingsButton" class="button" type="submit" value="More Settings">  <img width="30" height="30" src="../img/settings.jpg" /></button>
+            <span id="status-display"></span>
+            <button id="helpButton" class="button" type="submit" value="Help">  <img width="29" height="29" src="../img/help.png" /></button>
+            <span id="status-display"></span>
+            </h1>
+            <img id="logo" class="centered" src="../img/phishnetlogo.png" width="120" height="98" />
+        </div>
+        
+        
+      
+
+        <div id="body-div">
+            <div id="error-div">
+                <h3 id="error" class="centered">Welcome to PhishNet</h3>
+            </div>
+            
+            <div id="form-div" style="background: white">
+                <form id="form">
+                    
+                    
+                    <p>
+                        <label class="form-label" for="reportBox">Report URL: </label><br />
+                        <input type="text" id="report-box" class="form-text" name="report-box" size="50" value="" autocomplete="off" />
+                    </p>
+                    <p>
+                        <button id="reportButton" class="button" type="button" value="Report URL">REPORT<br />URL</button>
+                        <span id="status-display"></span>
+                    </p>
+                    <p>
+                        <button id="reportCurrentButton" class="button" type="button" value="Report Current Page">REPORT CURRENT PAGE </button>
+                        <span id="status-display"></span>
+                    </p>
+                    <p>
+                        <label class="form-label" for="whiteBox">WhiteList URL: </label><br />
+                        <input type="text" id="white-box" class="form-text" name="white-box" size="50" value="" autocomplete="off" />
+                    </p>
+                    <p>
+                        <button id="whiteButton" class="button" type="button" value="WhiteList URL">WHITELIST<br />URL</button>
+                        <span id="status-display"></span>
+                    </p>
+                    <p>
+                        <button id="whiteCurrentButton" class="button" type="button" value="WhiteList Current Page">WHITELIST CURRENT PAGE</button>
+                        <span id="status-display"></span>
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
